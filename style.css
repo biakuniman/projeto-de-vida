@@ -1,11 +1,9 @@
-/*aula1- ESTRUTURANDO O SITE*/
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 :root{
-    --cor-de-fundo: #e90be9;
+    --cor-de-fundo: #e90b94;
     --branco: #FFFFFF;
-    --azul: #00eeff;
-    --botao-ativo: #8a508b;
+    --azul: #42d6e0;
+    --botao-ativo: #2bbcff;
     --botao-inativo: rgba(58, 55, 94, 0.5);
     --texto-fundo: rgba(58,55,94, 0.3);
 }
@@ -23,4 +21,4 @@ body {
     
 }
 
-/*aula2 -página responsiva*/
+/
