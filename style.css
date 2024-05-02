@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-:root {
-    --cor-de-fundo: #f79cffb9;
-    --verde: #eef113;
-    --branco: #FFFFFF;
-    --botao-ativo: #8b0d33;
-    --botao-inativo: rgba(148, 0, 69, 0.808);
-    --texto-fundo: rgba(58, 55, 94, 0.568);
+:root{
+    --cor-de-fundo:#26043F; 
+    --branco:#FFFFFF;
+    --rosa:#f16c9f;
+    --botao-ativo:#ff1c99;
+    --botao-inativo:#af2375e0;
+    --texto-fundo:#ffb2dc;
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Chakra Petch', 'Times New Roman', Times, serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .conteudo-principal {
@@ -28,16 +28,16 @@ body {
 .titulo-principal {
     text-align: left;
     width: 100%;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .titulo-principal span {
-    color: var(--verde);
+    color: var(--rosa);
 }
 
 
 .botao {
-    font-family: 'Chakra Petch', 'Times New Roman', Times, serif;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -62,11 +62,11 @@ body {
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
+    border-bottom: 4px solid var(--rosa);
 }
 
 .abas-textos{
-    background-color: var(--texto-fundo);
+    background-color: var(--botao-inativo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
@@ -84,15 +84,32 @@ body {
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--verde);
+    color: var(--rosa);
     text-transform: uppercase;
 }
 
 .contador{  /*aula6*/
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--rosa);
+    font-size: 20px;
+    margin: 0;
+}
 @media screen and (min-width: 768px) {
     .botoes {
         display: flex;
